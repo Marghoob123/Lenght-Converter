@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="converter.css">
+    <script src="converter.js"></script>
+</head>
+<body>
+    <h2 class="heading">Give value to any field to convert</h2>
+    <div class="grid_container">
+            <p>Length Converter</p>
+        <div class="container">
+            <label for="feet">Feet</label>
+            <input type="number" id="feet" oninput="convertToOthers('feet',this.value)"></input>
+        </div>
+        <div class="container">
+            <label for="inches">Inches</label>
+            <input type="number" id="inch" oninput="convertToOthers('inch',this.value)"></input>
+        </div>
+        <div class="container">
+            <label for="centimeter">CentiMeters</label>
+            <input type="number" id="cm" oninput="convertToOthers('cm',this.value)"></input>
+        </div>
+        <div class="container">
+            <label for="meter">Meters</label>
+            <input type="number" id="m" oninput="convertToOthers('m',this.value)"></input>
+        </div>
+        <div class="container">
+            <label for="kiloimeter">KiloMeters</label>
+            <input type="number" id="km" oninput="convertToOthers('km',this.value)"></input>
+        </div>
+        <div class="container">
+            <label for="yards">Yards</label>
+            <input type="number" id="yards" oninput="convertToOthers('yards',this.value)"></input>
+        </div>
+        <div class="container">
+            <label for="miles">Miles</label>
+            <input type="number" id="mil" oninput="convertToOthers('miles',this.value)"></input>
+        </div>
+    </div>
+</body>
+</html>
